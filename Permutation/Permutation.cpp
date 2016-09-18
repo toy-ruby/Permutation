@@ -1,11 +1,16 @@
 // Permutation.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+#include "Permute.h"
 
-
-int main()
+int main(int argc, char** argv)
 {
-    return 0;
+	string s = argv[1];
+	vector<string> v = Permute::fromString(s);
+	vector<string>::iterator i = v.begin();
+	int ind = 0;
+
+	system("pause");
+	return 0;
 }
 
