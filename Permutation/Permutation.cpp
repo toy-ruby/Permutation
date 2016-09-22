@@ -7,10 +7,7 @@ int main(int argc, char** argv)
 {
 	string s = argv[1];
 	vector<string> v = Permute::fromString(s);
-	vector<string>::iterator i = v.begin();
-	int ind = 0;
+    vector<string>::iterator i = v.begin();
 
-	system("pause");
 	return 0;
 }
-

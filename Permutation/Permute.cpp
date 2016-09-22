@@ -13,14 +13,10 @@ vector<string> Permute::fromString(string str)
 	static vector<string> val;
 
 	sort(begin(str), end(str));
-	cout << "Sorted: " << str << endl;
 
-	do {
-		cout << str << endl;
+    do {
 		val.push_back(str);		
 	} while (next_permutation( begin(str), end(str)));
-
-	cout << "Count: " << val.size() << endl;
 	
 	return val;
 }
@@ -36,10 +32,9 @@ vector<string> Permute::fromVector(vector<string> vec)
 		{
 			s += *i;
 		}
-		val.push_back(s); 
-		cout << s << endl;
-	} while (next_permutation(vec.begin(),vec.end()));
-	cout << "vector size: " << val.size() << endl;
+        val.push_back(s);
+    } while (next_permutation(vec.begin(),vec.end()));
+
 	return val;
 }
 
